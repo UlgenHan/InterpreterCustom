@@ -1,0 +1,9 @@
+variable integer x = 4;
+variable integer y = 8;
+
+function integer calculate(variable integer param1, variable integer param2){
+            return param1 + param2;
+}
+        
+variable integer result = call calculate(x, y);
+print result;

@@ -1,0 +1,18 @@
+variable integer x = 4;
+
+function integer fibonacci(variable integer n) {
+    variable bool zeroCondition = n <= 0;
+    variable bool oneCondition = n == 1;
+    if(zeroCondition) {
+        return 0;
+    } else {
+        if(oneCondition) {
+        return 1;
+        } else {
+        return fibonacci(n - 1) + fibonacci(n - 2);
+        }
+    } 
+}
+
+variable integer result = call fibonacci(x);
+print result;
