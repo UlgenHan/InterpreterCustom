@@ -14,6 +14,18 @@ on this foundation, we embarked on an ambitious project to create a domainspecif
 this DSL, providing a comprehensive overview of the implementation process,
 challenges encountered, and solutions devised.
 
+### Example of designed language
+
+variable integer x = 4;
+variable integer y = 8;
+
+function integer calculate(variable integer param1, variable integer param2){
+            return param1 + param2;
+}
+        
+variable integer result = call calculate(x, y);
+print result;
+
 ## Design and Implementation
 
 ### Lexical Analysis (Lexing) and Tokenization
